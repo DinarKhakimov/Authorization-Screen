@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FA60849276FB65E00470339 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA60848276FB65E00470339 /* UserModel.swift */; };
 		9FD5A473276A5379002BA7A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A472276A5379002BA7A1 /* AppDelegate.swift */; };
 		9FD5A475276A5379002BA7A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */; };
 		9FD5A477276A5379002BA7A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A476276A5379002BA7A1 /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FA60848276FB65E00470339 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9FD5A46F276A5379002BA7A1 /* Authorization Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD5A472276A5379002BA7A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FA60842276FB47200470339 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FA60848276FB65E00470339 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FA60844276FB49700470339 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5A476276A5379002BA7A1 /* LoginViewController.swift */,
+				9FD5A48A276A7727002BA7A1 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9FA60845276FB4CE00470339 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5A478276A5379002BA7A1 /* Main.storyboard */,
+				9FD5A47D276A537B002BA7A1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9FA60846276FB59400470339 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5A47B276A537B002BA7A1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FA60847276FB5BE00470339 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5A472276A5379002BA7A1 /* AppDelegate.swift */,
+				9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */,
+				9FD5A480276A537B002BA7A1 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		9FD5A466276A5378002BA7A1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +104,11 @@
 		9FD5A471276A5379002BA7A1 /* Authorization Screen */ = {
 			isa = PBXGroup;
 			children = (
-				9FD5A472276A5379002BA7A1 /* AppDelegate.swift */,
-				9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */,
-				9FD5A476276A5379002BA7A1 /* LoginViewController.swift */,
-				9FD5A48A276A7727002BA7A1 /* WelcomeViewController.swift */,
-				9FD5A478276A5379002BA7A1 /* Main.storyboard */,
-				9FD5A47B276A537B002BA7A1 /* Assets.xcassets */,
-				9FD5A47D276A537B002BA7A1 /* LaunchScreen.storyboard */,
-				9FD5A480276A537B002BA7A1 /* Info.plist */,
+				9FA60842276FB47200470339 /* Models */,
+				9FA60847276FB5BE00470339 /* SupportFiles */,
+				9FA60844276FB49700470339 /* ViewControllers */,
+				9FA60845276FB4CE00470339 /* Storyboards */,
+				9FA60846276FB59400470339 /* Resources */,
 			);
 			path = "Authorization Screen";
 			sourceTree = "<group>";
@@ -144,6 +187,7 @@
 				9FD5A477276A5379002BA7A1 /* LoginViewController.swift in Sources */,
 				9FD5A48B276A7727002BA7A1 /* WelcomeViewController.swift in Sources */,
 				9FD5A473276A5379002BA7A1 /* AppDelegate.swift in Sources */,
+				9FA60849276FB65E00470339 /* UserModel.swift in Sources */,
 				9FD5A475276A5379002BA7A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9D5DJN27H5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Authorization Screen/Info.plist";
+				INFOPLIST_FILE = "Authorization Screen/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9D5DJN27H5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Authorization Screen/Info.plist";
+				INFOPLIST_FILE = "Authorization Screen/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
