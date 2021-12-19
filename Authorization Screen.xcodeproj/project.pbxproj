@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9FA60849276FB65E00470339 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA60848276FB65E00470339 /* UserModel.swift */; };
+		9FA6084B276FC20C00470339 /* AboutMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6084A276FC20B00470339 /* AboutMeController.swift */; };
+		9FA6084D276FC30A00470339 /* MyImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6084C276FC30A00470339 /* MyImageController.swift */; };
 		9FD5A473276A5379002BA7A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A472276A5379002BA7A1 /* AppDelegate.swift */; };
 		9FD5A475276A5379002BA7A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */; };
 		9FD5A477276A5379002BA7A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A476276A5379002BA7A1 /* LoginViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		9FA60848276FB65E00470339 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9FA6084A276FC20B00470339 /* AboutMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeController.swift; sourceTree = "<group>"; };
+		9FA6084C276FC30A00470339 /* MyImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageController.swift; sourceTree = "<group>"; };
 		9FD5A46F276A5379002BA7A1 /* Authorization Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD5A472276A5379002BA7A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD5A474276A5379002BA7A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				9FD5A476276A5379002BA7A1 /* LoginViewController.swift */,
 				9FD5A48A276A7727002BA7A1 /* WelcomeViewController.swift */,
+				9FA6084A276FC20B00470339 /* AboutMeController.swift */,
+				9FA6084C276FC30A00470339 /* MyImageController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 			files = (
 				9FD5A477276A5379002BA7A1 /* LoginViewController.swift in Sources */,
 				9FD5A48B276A7727002BA7A1 /* WelcomeViewController.swift in Sources */,
+				9FA6084D276FC30A00470339 /* MyImageController.swift in Sources */,
 				9FD5A473276A5379002BA7A1 /* AppDelegate.swift in Sources */,
 				9FA60849276FB65E00470339 /* UserModel.swift in Sources */,
 				9FD5A475276A5379002BA7A1 /* SceneDelegate.swift in Sources */,
+				9FA6084B276FC20C00470339 /* AboutMeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

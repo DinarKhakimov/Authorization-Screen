@@ -14,20 +14,27 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UITextField!
     
     // MARK: - Private properties
-    private var user = "Johnny"
-    private var password = "777"
+    private var user = User(login: "Johnny", password: "777")
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeViewController = segue.destination as? WelcomeViewController else { return }
-        welcomeViewController.userName = user
+        welcomeViewController.userName = user.login
+        
+        let tabBarController = segue.destination as! UITabBarController
+        if let viewControllers = tabBarController.viewControllers {
+            for viewController in viewControllers {
+                if let aboutMeController = viewController as? AboutMeController {
+                    aboutMeController.navigationItem.title = "Hello"
+                }
+            }
+        }
     }
-    
     
     
     // MARK: - IB Actions
     @IBAction func loginPressed() {
-        if userNameLabel.text != user || passwordLabel.text != password {
+        if userNameLabel.text != user.login || passwordLabel.text != user.password {
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and password",
                       textField: passwordLabel)
@@ -35,8 +42,8 @@ class LoginViewController: UIViewController {
     }
     @IBAction func forgotUserData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Help", message: "Your password is \(password)")
-        : showAlert(title: "Help", message: "Your user name is \(user)")
+        ? showAlert(title: "Help", message: "Your password is \(user.password)")
+        : showAlert(title: "Help", message: "Your user name is \(user.login)")
     }
     
     @IBAction func unwind(for: UIStoryboardSegue) {

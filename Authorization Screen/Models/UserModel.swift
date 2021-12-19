@@ -9,8 +9,8 @@ struct User {
     var login: String
     var password: String
     
-    static func personData(user: User) -> Person {
-       let person = Person(name: user.login,
+    static func personData() -> Person {
+       let person = Person(name: "Johnny",
                             surname: "Boshechka",
                             aboutPerson: "It's just my nickname, i was born in the city of Ufa, 16.01.1987 ")
         return person

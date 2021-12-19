@@ -15,9 +15,9 @@ class WelcomeViewController: UIViewController {
     
     var userName = ""
     
-    private var leftSideColor = UIColor(red: 225/255,
-                                   green: 230/255,
-                                   blue: 235/255,
+    private var leftSideColor = UIColor(red: 30/255,
+                                   green: 40/255,
+                                   blue: 50/255,
                                    alpha: 1)
     private var rightSideColor = UIColor(red: 10/255,
                                       green: 20/255,
