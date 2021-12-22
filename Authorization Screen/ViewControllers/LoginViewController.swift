@@ -14,24 +14,22 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UITextField!
     
     // MARK: - Private properties
-    private var user = User(login: "Johnny", password: "777")
+    private var user = User.getPersonData()
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeViewController = segue.destination as? WelcomeViewController else { return }
-        welcomeViewController.userName = user.login
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
         
-        let tabBarController = segue.destination as! UITabBarController
-        if let viewControllers = tabBarController.viewControllers {
-            for viewController in viewControllers {
-                if let aboutMeController = viewController as? AboutMeController {
-                    aboutMeController.navigationItem.title = "Hello"
-                }
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as! AboutUserViewController
+                aboutUserVC.userName = user
             }
         }
     }
-    
-    
     // MARK: - IB Actions
     @IBAction func loginPressed() {
         if userNameLabel.text != user.login || passwordLabel.text != user.password {
@@ -62,7 +60,6 @@ extension LoginViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
 }
 
 // MARK: - Setup Text Field

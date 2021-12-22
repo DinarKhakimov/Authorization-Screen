@@ -8,8 +8,14 @@
 import Foundation
 import UIKit
 
-class MyImageController: UIViewController {
+class UserImageViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var userName: User!
+    
     override func viewDidLoad() {
         view.backgroundColor = .gray
+        imageView.image = UIImage(named: userName.person.image)
     }
 }
